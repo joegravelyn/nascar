@@ -1,0 +1,9 @@
+SQL Server Database/.vs/
+SQL Server Database/Database/bin/
+SQL Server Database/Database/obj/
+.vs/
+*.jfm
+*.user
+*.dbmdl
+*/__pycache__
+pyETL/config.ini

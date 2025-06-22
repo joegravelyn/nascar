@@ -1,0 +1,580 @@
+SeriesID,Season,CarNumber,TeamName,OwnerName,TeamKey
+1,2025,1,THR 1,Trackhouse Racing,THR 1_1
+1,2024,1,THR 1,Trackhouse Racing,THR 1_1
+1,2023,1,THR 1,Trackhouse Racing,THR 1_1
+1,2022,1,THR 1,Trackhouse Racing,THR 1_1
+1,2025,2,Penske 2,Team Penske,Penske 2_1
+1,2024,2,Penske 2,Team Penske,Penske 2_1
+1,2023,2,Penske 2,Team Penske,Penske 2_1
+1,2022,2,Penske 2,Team Penske,Penske 2_1
+1,2025,3,RCR 3,Richard Childress Racing,RCR 3_1
+1,2024,3,RCR 3,Richard Childress Racing,RCR 3_1
+1,2023,3,RCR 3,Richard Childress Racing,RCR 3_1
+1,2022,3,RCR 3,Richard Childress Racing,RCR 3_1
+1,2025,4,FRM 4,Front Row Motorsports,FRM 4_1
+1,2024,4,SHR 4,Stewart-Haas Racing,SHR 4_1
+1,2023,4,SHR 4,Stewart-Haas Racing,SHR 4_1
+1,2022,4,SHR 4,Stewart-Haas Racing,SHR 4_1
+1,2025,5,HMS 5,Hendrick Motorsports,HMS 5_1
+1,2024,5,HMS 5,Hendrick Motorsports,HMS 5_1
+1,2023,5,HMS 5,Hendrick Motorsports,HMS 5_1
+1,2022,5,HMS 5,Hendrick Motorsports,HMS 5_1
+1,2025,6,RFK 6,RFK Racing,RFK 6_1
+1,2024,6,RFK 6,RFK Racing,RFK 6_1
+1,2023,6,RFK 6,RFK Racing,RFK 6_1
+1,2022,6,RFK 6,RFK Racing,RFK 6_1
+1,2025,7,Spire 7,Spire Motorsports,Spire 7_1
+1,2024,7,Spire 7,Spire Motorsports,Spire 7_1
+1,2023,7,Spire 7,Spire Motorsports,Spire 7_1
+1,2022,7,Spire 7,Spire Motorsports,Spire 7_1
+1,2025,8,RCR 8,Richard Childress Racing,RCR 8_1
+1,2024,8,RCR 8,Richard Childress Racing,RCR 8_1
+1,2023,8,RCR 8,Richard Childress Racing,RCR 8_1
+1,2022,8,RCR 8,Richard Childress Racing,RCR 8_1
+1,2025,9,HMS 9,Hendrick Motorsports,HMS 9_1
+1,2024,9,HMS 9,Hendrick Motorsports,HMS 9_1
+1,2023,9,HMS 9,Hendrick Motorsports,HMS 9_1
+1,2022,9,HMS 9,Hendrick Motorsports,HMS 9_1
+1,2025,10,Kaulig 10,Kaulig Racing,Kaulig 10_1
+1,2024,10,FRM 4,Stewart-Haas Racing,FRM 4_1
+1,2023,10,FRM 4,Stewart-Haas Racing,FRM 4_1
+1,2022,10,FRM 4,Stewart-Haas Racing,FRM 4_1
+1,2025,11,JGR 11,Joe Gibbs Racing,JGR 11_1
+1,2024,11,JGR 11,Joe Gibbs Racing,JGR 11_1
+1,2023,11,JGR 11,Joe Gibbs Racing,JGR 11_1
+1,2022,11,JGR 11,Joe Gibbs Racing,JGR 11_1
+1,2025,12,Penske 12,Team Penske,Penske 12_1
+1,2024,12,Penske 12,Team Penske,Penske 12_1
+1,2023,12,Penske 12,Team Penske,Penske 12_1
+1,2022,12,Penske 12,Team Penske,Penske 12_1
+1,2024,13,Kaulig 13,Kaulig Racing,Kaulig 13_1
+1,2023,13,Kaulig 13,Kaulig Racing,Kaulig 13_1
+1,2024,14,SHR 14,Stewart-Haas Racing,SHR 14_1
+1,2023,14,SHR 14,Stewart-Haas Racing,SHR 14_1
+1,2022,14,SHR 14,Stewart-Haas Racing,SHR 14_1
+1,2024,15,RWR 15,Rick Ware Racing,RWR 15_1
+1,2023,15,RWR 15,Rick Ware Racing,RWR 15_1
+1,2022,15,RWR 15,Rick Ware Racing,RWR 15_1
+1,2025,16,Kaulig 16,Kaulig Racing,Kaulig 16_1
+1,2024,16,Kaulig 16,Kaulig Racing,Kaulig 16_1
+1,2023,16,Kaulig 16,Kaulig Racing,Kaulig 16_1
+1,2022,16,Kaulig 16,Kaulig Racing,Kaulig 16_1
+1,2025,17,RFK 17,RFK Racing,RFK 17_1
+1,2024,17,RFK 17,RFK Racing,RFK 17_1
+1,2023,17,RFK 17,RFK Racing,RFK 17_1
+1,2022,17,RFK 17,RFK Racing,RFK 17_1
+1,2022,18,JGR 54,Joe Gibbs Racing,JGR 54_1
+1,2025,19,JGR 19,Joe Gibbs Racing,JGR 19_1
+1,2024,19,JGR 19,Joe Gibbs Racing,JGR 19_1
+1,2023,19,JGR 19,Joe Gibbs Racing,JGR 19_1
+1,2022,19,JGR 19,Joe Gibbs Racing,JGR 19_1
+1,2025,20,JGR 20,Joe Gibbs Racing,JGR 20_1
+1,2024,20,JGR 20,Joe Gibbs Racing,JGR 20_1
+1,2023,20,JGR 20,Joe Gibbs Racing,JGR 20_1
+1,2022,20,JGR 20,Joe Gibbs Racing,JGR 20_1
+1,2025,21,WBR 21,Wood Brothers Racing,WBR 21_1
+1,2024,21,WBR 21,Wood Brothers Racing,WBR 21_1
+1,2023,21,WBR 21,Wood Brothers Racing,WBR 21_1
+1,2022,21,WBR 21,Wood Brothers Racing,WBR 21_1
+1,2025,22,Penske 22,Team Penske,Penske 22_1
+1,2024,22,Penske 22,Team Penske,Penske 22_1
+1,2023,22,Penske 22,Team Penske,Penske 22_1
+1,2022,22,Penske 22,Team Penske,Penske 22_1
+1,2025,23,23XI 23,23XI Racing,23XI 23_1
+1,2024,23,23XI 23,23XI Racing,23XI 23_1
+1,2023,23,23XI 23,23XI Racing,23XI 23_1
+1,2022,23,23XI 23,23XI Racing,23XI 23_1
+1,2025,24,HMS 24,Hendrick Motorsports,HMS 24_1
+1,2024,24,HMS 24,Hendrick Motorsports,HMS 24_1
+1,2023,24,HMS 24,Hendrick Motorsports,HMS 24_1
+1,2022,24,HMS 24,Hendrick Motorsports,HMS 24_1
+1,2022,26,Hezeberg 26,Team Hezeberg,Hezeberg 26_1
+1,2022,27,Hezeberg 27,Team Hezeberg,Hezeberg 27_1
+1,2023,29,SHR 4,Stewart-Haas Racing,SHR 4_1
+1,2024,31,Kaulig 10,Kaulig Racing,Kaulig 10_1
+1,2023,31,Kaulig 10,Kaulig Racing,Kaulig 10_1
+1,2022,31,Kaulig 10,Kaulig Racing,Kaulig 10_1
+1,2025,33,RCR 33,Richard Childress Racing,RCR 33_1
+1,2024,33,RCR 33,Richard Childress Racing,RCR 33_1
+1,2023,33,RCR 33,Richard Childress Racing,RCR 33_1
+1,2022,33,RCR 33,Richard Childress Racing,RCR 33_1
+1,2025,34,FRM 34,Front Row Motorsports,FRM 34_1
+1,2024,34,FRM 34,Front Row Motorsports,FRM 34_1
+1,2023,34,FRM 34,Front Row Motorsports,FRM 34_1
+1,2022,34,FRM 34,Front Row Motorsports,FRM 34_1
+1,2025,35,23XI 35,23XI Racing,23XI 35_1
+1,2024,36,FRM 36,Front Row Motorsports,FRM 36_1
+1,2023,36,FRM 36,Front Row Motorsports,FRM 36_1
+1,2025,38,FRM 38,Front Row Motorsports,FRM 38_1
+1,2024,38,FRM 38,Front Row Motorsports,FRM 38_1
+1,2023,38,FRM 38,Front Row Motorsports,FRM 38_1
+1,2022,38,FRM 38,Front Row Motorsports,FRM 38_1
+1,2025,40,JRM 40,JR Motorsports,JRM 40_1
+1,2025,41,Haas 41,Haas Factory Team,Haas 41_1
+1,2024,41,Haas 41,Stewart-Haas Racing,Haas 41_1
+1,2023,41,Haas 41,Stewart-Haas Racing,Haas 41_1
+1,2022,41,Haas 41,Stewart-Haas Racing,Haas 41_1
+1,2025,42,LMC 42,Legacy Motor Club,LMC 42_1
+1,2024,42,LMC 42,Legacy Motor Club,LMC 42_1
+1,2023,42,LMC 42,Legacy Motor Club,LMC 42_1
+1,2022,42,LMC 42,Petty GMS Motorsports,LMC 42_1
+1,2025,43,LMC 43,Legacy Motor Club,LMC 43_1
+1,2024,43,LMC 43,Legacy Motor Club,LMC 43_1
+1,2023,43,LMC 43,Legacy Motor Club,LMC 43_1
+1,2022,43,LMC 43,Petty GMS Motorsports,LMC 43_1
+1,2025,44,NY 44,NY Racing Team,NY 44_1
+1,2024,44,NY 44,NY Racing Team,NY 44_1
+1,2022,44,NY 44,NY Racing Team,NY 44_1
+1,2025,45,23XI 45,23XI Racing,23XI 45_1
+1,2024,45,23XI 45,23XI Racing,23XI 45_1
+1,2023,45,23XI 45,23XI Racing,23XI 45_1
+1,2022,45,23XI 45,23XI Racing,23XI 45_1
+1,2025,47,Hyak 47,Hyak Motorsports,Hyak 47_1
+1,2024,47,Hyak 47,JTG Daugherty Racing,Hyak 47_1
+1,2023,47,Hyak 47,JTG Daugherty Racing,Hyak 47_1
+1,2022,47,Hyak 47,JTG Daugherty Racing,Hyak 47_1
+1,2025,48,HMS 48,Hendrick Motorsports,HMS 48_1
+1,2024,48,HMS 48,Hendrick Motorsports,HMS 48_1
+1,2023,48,HMS 48,Hendrick Motorsports,HMS 48_1
+1,2022,48,HMS 48,Hendrick Motorsports,HMS 48_1
+1,2025,50,Avet 50,Team AmeriVet,Avet 50_1
+1,2024,50,Avet 50,Team AmeriVet,Avet 50_1
+1,2023,50,Avet 50,The Money Team Racing,Avet 50_1
+1,2022,50,Avet 50,The Money Team Racing,Avet 50_1
+1,2025,51,RWR 51,Rick Ware Racing,RWR 51_1
+1,2024,51,RWR 51,Rick Ware Racing,RWR 51_1
+1,2023,51,RWR 51,Rick Ware Racing,RWR 51_1
+1,2022,51,RWR 51,Rick Ware Racing,RWR 51_1
+1,2025,54,JGR 54,Joe Gibbs Racing,JGR 54_1
+1,2024,54,JGR 54,Joe Gibbs Racing,JGR 54_1
+1,2023,54,JGR 54,Joe Gibbs Racing,JGR 54_1
+1,2022,55,MBM 55,MBM Motorsports,MBM 55_1
+1,2025,56,Tricon 56,Tricon Garage,Tricon 56_1
+1,2025,60,RFK 60,RFK Racing,RFK 60_1
+1,2024,60,RFK 60,RFK Racing,RFK 60_1
+1,2025,62,Beard 62,Beard Motorsports,Beard 62_1
+1,2024,62,Beard 62,Beard Motorsports,Beard 62_1
+1,2023,62,Beard 62,Beard Motorsports,Beard 62_1
+1,2022,62,Beard 62,Beard Motorsports,Beard 62_1
+1,2025,66,MRM 66,Garage 66,MRM 66_1
+1,2024,66,MBM 66,MBM Motorsports,MBM 66_1
+1,2022,66,MBM 66,MBM Motorsports,MBM 66_1
+1,2025,67,23XI 67,23XI Racing,23XI 67_1
+1,2023,67,23XI 67,23XI Racing,23XI 67_1
+1,2025,71,Spire 71,Spire Motorsports,Spire 71_1
+1,2024,71,Spire 71,Spire Motorsports,Spire 71_1
+1,2025,77,Spire 77,Spire Motorsports,Spire 77_1
+1,2024,77,Spire 77,Spire Motorsports,Spire 77_1
+1,2023,77,Spire 77,Spire Motorsports,Spire 77_1
+1,2022,77,Spire 77,Spire Motorsports,Spire 77_1
+1,2025,78,Live Fast 78,Live Fast Motorsports,Live Fast 78_1
+1,2024,78,Live Fast 78,Live Fast Motorsports,Live Fast 78_1
+1,2023,78,Live Fast 78,Live Fast Motorsports,Live Fast 78_1
+1,2022,78,Live Fast 78,Live Fast Motorsports,Live Fast 78_1
+1,2025,84,LMC 84,Legacy Motor Club,LMC 84_1
+1,2024,84,LMC 84,Legacy Motor Club,LMC 84_1
+1,2023,84,LMC 84,Legacy Motor Club,LMC 84_1
+1,2025,87,THR 87,Trackhouse Racing,THR 87_1
+1,2025,88,THR 88,Trackhouse Racing,THR 88_1
+1,2025,91,THR 87,Trackhouse Racing,THR 87_1
+1,2023,91,THR 87,Trackhouse Racing,THR 87_1
+1,2022,91,THR 87,Trackhouse Racing,THR 87_1
+1,2025,99,THR 99,Trackhouse Racing,THR 99_1
+1,2024,99,THR 99,Trackhouse Racing,THR 99_1
+1,2023,99,THR 99,Trackhouse Racing,THR 99_1
+1,2022,99,THR 99,Trackhouse Racing,THR 99_1
+1,2025,01,RWR 15,Rick Ware Racing,RWR 15_1
+2,2025,1,JRM 1,JR Motorsports,JRM 1_2
+2,2024,1,JRM 1,JR Motorsports,JRM 1_2
+2,2023,1,JRM 1,JR Motorsports,JRM 1_2
+2,2022,1,JRM 1,JR Motorsports,JRM 1_2
+2,2025,2,RCR 2,Richard Childress Racing,RCR 2_2
+2,2024,2,RCR 2,Richard Childress Racing,RCR 2_2
+2,2023,2,RCR 2,Richard Childress Racing,RCR 2_2
+2,2022,2,RCR 2,Richard Childress Racing,RCR 2_2
+2,2025,3,RCR 33,Richard Childress Racing,RCR 33_2
+2,2023,3,RCR 33,Richard Childress Racing,RCR 33_2
+2,2022,3,RCR 33,Richard Childress Racing,RCR 33_2
+2,2025,4,APR 4,Alpha Prime Racing,APR 4_2
+2,2024,4,JDM 4,JD Motorsports,JDM 4_2
+2,2023,4,JDM 4,JD Motorsports,JDM 4_2
+2,2022,4,JDM 4,JD Motorsports,JDM 4_2
+2,2025,5,Our 5,Our Motorsports,Our 5_2
+2,2024,5,Our 5,Our Motorsports,Our 5_2
+2,2023,5,BMR 5,Big Machine Racing,BMR 5_2
+2,2022,5,BJM 5,BJ McLeod Motorsports,BJM 5_2
+2,2024,6,JDM 6,JD Motorsports,JDM 6_2
+2,2023,6,JDM 6,JD Motorsports,JDM 6_2
+2,2022,6,JDM 6,JD Motorsports,JDM 6_2
+2,2025,7,JRM 7,JR Motorsports,JRM 7_2
+2,2024,7,JRM 7,JR Motorsports,JRM 7_2
+2,2023,7,JRM 7,JR Motorsports,JRM 7_2
+2,2022,7,JRM 7,JR Motorsports,JRM 7_2
+2,2025,8,JRM 8,JR Motorsports,JRM 8_2
+2,2024,8,JRM 8,JR Motorsports,JRM 8_2
+2,2023,8,JRM 8,JR Motorsports,JRM 8_2
+2,2022,8,JRM 8,JR Motorsports,JRM 8_2
+2,2025,9,JRM 9,JR Motorsports,JRM 9_2
+2,2024,9,JRM 9,JR Motorsports,JRM 9_2
+2,2023,9,JRM 9,JR Motorsports,JRM 9_2
+2,2022,9,JRM 9,JR Motorsports,JRM 9_2
+2,2025,10,Kaulig 10,Kaulig Racing,Kaulig 10_2
+2,2024,10,Kaulig 10,Kaulig Racing,Kaulig 10_2
+2,2023,10,Kaulig 10,Kaulig Racing,Kaulig 10_2
+2,2022,10,Kaulig 10,Kaulig Racing,Kaulig 10_2
+2,2025,11,Kaulig 11,Kaulig Racing,Kaulig 11_2
+2,2024,11,Kaulig 11,Kaulig Racing,Kaulig 11_2
+2,2023,11,Kaulig 11,Kaulig Racing,Kaulig 11_2
+2,2022,11,Kaulig 11,Kaulig Racing,Kaulig 11_2
+2,2024,13,MBM 13,MBM Motorsports,MBM 13_2
+2,2022,13,MBM 13,MBM Motorsports,MBM 13_2
+2,2025,14,SSGLR 14,SS-Green Light Racing,SSGLR 14_2
+2,2024,14,SSGLR 14,SS-Green Light Racing,SSGLR 14_2
+2,2022,14,Kaulig 14,Kaulig Racing,Kaulig 14_2
+2,2024,15,AMR 25,AM Racing,AMR 25_2
+2,2025,16,Kaulig 16,Kaulig Racing,Kaulig 16_2
+2,2024,16,Kaulig 16,Kaulig Racing,Kaulig 16_2
+2,2023,16,Kaulig 16,Kaulig Racing,Kaulig 16_2
+2,2022,16,Kaulig 16,Kaulig Racing,Kaulig 16_2
+2,2025,17,HMS 17,Hendrick Motorsports,HMS 17_2
+2,2024,17,HMS 17,Hendrick Motorsports,HMS 17_2
+2,2023,17,HMS 17,Hendrick Motorsports,HMS 17_2
+2,2022,17,HMS 17,Hendrick Motorsports,HMS 17_2
+2,2025,18,JGR 18,Joe Gibbs Racing,JGR 18_2
+2,2024,18,JGR 18,Joe Gibbs Racing,JGR 18_2
+2,2023,18,JGR 18,Joe Gibbs Racing,JGR 18_2
+2,2022,18,JGR 18,Joe Gibbs Racing,JGR 18_2
+2,2025,19,JGR 19,Joe Gibbs Racing,JGR 19_2
+2,2024,19,JGR 19,Joe Gibbs Racing,JGR 19_2
+2,2023,19,JGR 19,Joe Gibbs Racing,JGR 19_2
+2,2022,19,JGR 19,Joe Gibbs Racing,JGR 19_2
+2,2025,20,JGR 20,Joe Gibbs Racing,JGR 20_2
+2,2024,20,JGR 20,Joe Gibbs Racing,JGR 20_2
+2,2023,20,JGR 20,Joe Gibbs Racing,JGR 20_2
+2,2025,21,RCR 21,Richard Childress Racing,RCR 21_2
+2,2024,21,RCR 21,Richard Childress Racing,RCR 21_2
+2,2023,21,RCR 21,Richard Childress Racing,RCR 21_2
+2,2022,21,RCR 21,Richard Childress Racing,RCR 21_2
+2,2023,22,JAR 27,Jordan Anderson Racing,JAR 27_2
+2,2022,23,Our 5,Our Motorsports,Our 5_2
+2,2025,24,Sam Hunt 24,Sam Hunt Racing,Sam Hunt 24_2
+2,2024,24,Sam Hunt 24,Sam Hunt Racing,Sam Hunt 24_2
+2,2023,24,Sam Hunt 24,Sam Hunt Racing,Sam Hunt 24_2
+2,2022,24,Sam Hunt 24,Sam Hunt Racing,Sam Hunt 24_2
+2,2025,25,AMR 25,AM Racing,AMR 25_2
+2,2023,25,AMR 25,AM Racing,AMR 25_2
+2,2025,26,Sam Hunt 26,Sam Hunt Racing,Sam Hunt 26_2
+2,2024,26,Sam Hunt 26,Sam Hunt Racing,Sam Hunt 26_2
+2,2023,26,Sam Hunt 26,Sam Hunt Racing,Sam Hunt 26_2
+2,2022,26,Sam Hunt 26,Sam Hunt Racing,Sam Hunt 26_2
+2,2025,27,JAR 27,Jordan Anderson Racing,JAR 27_2
+2,2024,27,JAR 27,Jordan Anderson Racing,JAR 27_2
+2,2023,27,JAR 27,Jordan Anderson Racing,JAR 27_2
+2,2022,27,Our 27,Our Motorsports,Our 27_2
+2,2025,28,RSS 28,RSS Racing,RSS 28_2
+2,2024,28,RSS 28,RSS Racing,RSS 28_2
+2,2023,28,RSS 28,RSS Racing,RSS 28_2
+2,2022,28,RSS 28,RSS Racing,RSS 28_2
+2,2024,29,RSS 29,RSS Racing,RSS 29_2
+2,2023,29,RSS 29,RSS Racing,RSS 29_2
+2,2024,30,RJR 30,Rette Jones Racing,RJR 30_2
+2,2025,31,JAR 31,Jordan Anderson Racing,JAR 31_2
+2,2024,31,JAR 31,Jordan Anderson Racing,JAR 31_2
+2,2023,31,JAR 31,Jordan Anderson Racing,JAR 31_2
+2,2022,31,JAR 31,Jordan Anderson Racing,JAR 31_2
+2,2025,32,JAR 32,Jordan Anderson Racing,JAR 32_2
+2,2024,32,JAR 32,Jordan Anderson Racing,JAR 32_2
+2,2025,33,RCR 33,Richard Childress Racing,RCR 33_2
+2,2024,33,RCR 33,Richard Childress Racing,RCR 33_2
+2,2023,34,JIM 34,Jesse Iwuji Motorsports,JIM 34_2
+2,2022,34,JIM 34,Jesse Iwuji Motorsports,JIM 34_2
+2,2025,35,JGM 35,Joey Gase Motorsports,JGM 35_2
+2,2024,35,JGM 35,Joey Gase Motorsports,JGM 35_2
+2,2023,35,JGM 35,Emerling-Gase Motorsports,JGM 35_2
+2,2022,35,JGM 35,Emerling-Gase Motorsports,JGM 35_2
+2,2024,36,DGM 71,DGM Racing,DGM 71_2
+2,2023,36,DGM 71,DGM Racing,DGM 71_2
+2,2022,36,DGM 71,DGM Racing,DGM 71_2
+2,2024,38,Viking 99,RSS Racing,Viking 99_2
+2,2023,38,Viking 99,RSS Racing,Viking 99_2
+2,2022,38,Viking 99,RSS Racing,Viking 99_2
+2,2025,39,RSS 39,RSS Racing,RSS 39_2
+2,2024,39,RSS 39,RSS Racing,RSS 39_2
+2,2023,39,RSS 39,RSS Racing,RSS 39_2
+2,2022,39,RSS 39,RSS Racing,RSS 39_2
+2,2025,41,Haas 41,Haas Factory Team,Haas 41_2
+2,2025,42,Young 42,Young's Motorsports,Young 42_2
+2,2024,42,Young 42,Young's Motorsports,Young 42_2
+2,2024,43,APR 4,Alpha Prime Racing,APR 4_2
+2,2023,43,APR 4,Alpha Prime Racing,APR 4_2
+2,2025,44,APR 44,Alpha Prime Racing,APR 44_2
+2,2024,44,APR 44,Alpha Prime Racing,APR 44_2
+2,2023,44,APR 44,Alpha Prime Racing,APR 44_2
+2,2022,44,APR 44,Alpha Prime Racing,APR 44_2
+2,2025,45,APR 45,Alpha Prime Racing,APR 45_2
+2,2024,45,APR 45,Alpha Prime Racing,APR 45_2
+2,2023,45,APR 45,Alpha Prime Racing,APR 45_2
+2,2022,45,APR 45,Alpha Prime Racing,APR 45_2
+2,2022,47,MGR 47,Mike Harmon Racing,MGR 47_2
+2,2025,48,BMR 48,Big Machine Racing,BMR 48_2
+2,2024,48,BMR 48,Big Machine Racing,BMR 48_2
+2,2023,48,BMR 48,Big Machine Racing,BMR 48_2
+2,2022,48,BMR 48,Big Machine Racing,BMR 48_2
+2,2025,50,Pardus 50,Pardus Racing Inc,Pardus 50_2
+2,2024,50,Pardus 50,Pardus Racing Inc,Pardus 50_2
+2,2023,50,Pardus 50,Pardus Racing Inc,Pardus 50_2
+2,2025,51,JCR 51,Jeremy Clements Racing,JCR 51_2
+2,2024,51,JCR 51,Jeremy Clements Racing,JCR 51_2
+2,2023,51,JCR 51,Jeremy Clements Racing,JCR 51_2
+2,2022,51,JCR 51,Jeremy Clements Racing,JCR 51_2
+2,2025,53,JGM 53,Joey Gase Motorsports,JGM 53_2
+2,2024,53,JGM 53,Joey Gase Motorsports,JGM 53_2
+2,2023,53,JGM 53,Emerling-Gase Motorsports,JGM 53_2
+2,2022,53,JGM 53,Emerling-Gase Motorsports,JGM 53_2
+2,2025,54,JGR 54,Joe Gibbs Racing,JGR 54_2
+2,2022,54,JGR 54,Joe Gibbs Racing,JGR 54_2
+2,2022,55,BJM 55,BJ McLeod Motorsports,BJM 55_2
+2,2025,66,MBM 66,MBM Motorsports,MBM 66_2
+2,2024,66,MBM 66,MBM Motorsports,MBM 66_2
+2,2023,66,MBM 66,MBM Motorsports,MBM 66_2
+2,2022,66,MBM 66,MBM Motorsports,MBM 66_2
+2,2022,68,BMS 68,Brandonbilt Motorsports,BMS 68_2
+2,2025,70,CFR 70,Cope Family Racing,CFR 70_2
+2,2025,71,DGM 71,DGM Racing,DGM 71_2
+2,2025,74,MHR 74,Mike Harmon Racing,MHR 74_2
+2,2024,74,MHR 74,Mike Harmon Racing,MHR 74_2
+2,2023,74,MHR 74,CHK Racing,MHR 74_2
+2,2023,77,Spire 77,Spire Motorsports,Spire 77_2
+2,2022,77,Bassett,Bassett Racing,Bassett_2
+2,2024,78,BJM 78,BJ McLeod Motorsports,BJM 78_2
+2,2023,78,BJM 78,BJ McLeod Motorsports,BJM 78_2
+2,2022,78,BJM 78,BJ McLeod Motorsports,BJM 78_2
+2,2024,81,JGR 54,Joe Gibbs Racing,JGR 54_2
+2,2025,87,JAR 87,Jordan Anderson Racing,JAR 87_2
+2,2024,87,JAR 87,Jordan Anderson Racing,JAR 87_2
+2,2025,88,JRM 88,JR Motorsports,JRM 88_2
+2,2024,88,JRM 88,JR Motorsports,JRM 88_2
+2,2023,88,JRM 88,JR Motorsports,JRM 88_2
+2,2022,88,JRM 88,JR Motorsports,JRM 88_2
+2,2025,91,DGM 91,DGM Racing,DGM 91_2
+2,2024,91,DGM 91,DGM Racing,DGM 91_2
+2,2023,91,DGM 91,DGM Racing,DGM 91_2
+2,2022,91,DGM 91,DGM Racing,DGM 91_2
+2,2025,92,DGM 92,DGM Racing,DGM 92_2
+2,2024,92,DGM 92,DGM Racing,DGM 92_2
+2,2023,92,DGM 92,DGM Racing,DGM 92_2
+2,2022,92,DGM 92,DGM Racing,DGM 92_2
+2,2023,96,FRS 96,FRS Racing,FRS 96_2
+2,2024,97,Kaulig 97,Kaulig Racing,Kaulig 97_2
+2,2024,98,Haas 41,Stewart-Haas Racing,Haas 41_2
+2,2023,98,Haas 41,Stewart-Haas Racing,Haas 41_2
+2,2022,98,Haas 41,Stewart-Haas Racing,Haas 41_2
+2,2025,99,Viking 99,Viking Motorsports,Viking 99_2
+2,2023,99,BJM 99,BJ McLeod Motorsports,BJM 99_2
+2,2022,99,BJM 99,BJ McLeod Motorsports,BJM 99_2
+2,2025,00,Haas 00,Haas Factory Team,Haas 00_2
+2,2024,00,Haas 00,Stewart-Haas Racing,Haas 00_2
+2,2023,00,Haas 00,Stewart-Haas Racing,Haas 00_2
+2,2023,02,Our 02,Our Motorsports,Our 02_2
+2,2022,02,Our 02,Our Motorsports,Our 02_2
+2,2025,07,SSGLR 07,SS-Green Light Racing,SSGLR 07_2
+2,2024,07,SSGLR 07,SS-Green Light Racing,SSGLR 07_2
+2,2023,07,SSGLR 07,SS-Green Light Racing,SSGLR 07_2
+2,2022,07,SSGLR 07,SS-Green Light Racing,SSGLR 07_2
+2,2023,08,SSGLR 08,SS-Green Light Racing,SSGLR 08_2
+2,2022,08,SSGLR 08,SS-Green Light Racing,SSGLR 08_2
+3,2025,1,Tricon 1,Tricon Garage,Tricon 1_3
+3,2024,1,Tricon 1,Tricon Garage,Tricon 1_3
+3,2023,1,Tricon 1,Tricon Garage,Tricon 1_3
+3,2022,1,Tricon 1,David Gilliland Racing,Tricon 1_3
+3,2025,2,RBR 2,Reaume Brothers Racing,RBR 2_3
+3,2024,2,Spire 07,Rev Racing,Spire 07_3
+3,2023,2,Spire 07,Rev Racing,Spire 07_3
+3,2022,02,Young 02,Young's Motorsports,Young 02_3
+3,2022,3,JAR 3,Jordan Anderson Racing,JAR 3_3
+3,2025,4,HR 4,Hettinger Racing,HR 4_3
+3,2024,4,HR 4,Hettinger Racing,HR 4_3
+3,2023,4,KBM 4,Kyle Busch Motorsports,KBM 4_3
+3,2022,4,KBM 4,Kyle Busch Motorsports,KBM 4_3
+3,2025,5,Tricon 5,Tricon Garage,Tricon 5_3
+3,2024,5,Tricon 5,Tricon Garage,Tricon 5_3
+3,2023,5,Tricon 5,Tricon Garage,Tricon 5_3
+3,2022,5,Hill 5,Hill Motorsports,Hill 5_3
+3,2025,6,NBR 6,Norm Benning Racing,NBR 6_3
+3,2024,6,NBR 6,Norm Benning Racing,NBR 6_3
+3,2023,6,NBR 6,Norm Benning Racing,NBR 6_3
+3,2025,7,Spire 7,Spire Motorsports,Spire 7_3
+3,2024,7,Spire 7,Spire Motorsports,Spire 7_3
+3,2023,7,Spire 7,Spire Motorsports,Spire 7_3
+3,2022,7,Spire 7,Spire Motorsports,Spire 7_3
+3,2025,9,CR7 9,CR7 Motorsports,CR7 9_3
+3,2024,9,CR7 9,CR7 Motorsports,CR7 9_3
+3,2023,9,CR7 9,CR7 Motorsports,CR7 9_3
+3,2022,9,CR7 9,CR7 Motorsports,CR7 9_3
+3,2024,10,JJC 10,Jennifer Jo Cobb Racing,JJC 10_3
+3,2023,10,JJC 10,Jennifer Jo Cobb Racing,JJC 10_3
+3,2022,10,JJC 10,Jennifer Jo Cobb Racing,JJC 10_3
+3,2025,11,Tricon 11,Tricon Garage,Tricon 11_3
+3,2024,11,Tricon 11,Tricon Garage,Tricon 11_3
+3,2023,11,Tricon 11,Tricon Garage,Tricon 11_3
+3,2024,12,Young 12,Young's Motorsports,Young 12_3
+3,2023,12,Young 12,Young's Motorsports,Young 12_3
+3,2022,12,Young 12,Young's Motorsports,Young 12_3
+3,2025,13,Thor 13,ThorSport Racing,Thor 13_3
+3,2024,13,Thor 13,ThorSport Racing,Thor 13_3
+3,2023,13,Thor 13,ThorSport Racing,Thor 13_3
+3,2022,13,Thor 13,ThorSport Racing,Thor 13_3
+3,2024,14,THR 14,Trey Hutchens Racing,THR 14_3
+3,2023,14,THR 14,Trey Hutchens Racing,THR 14_3
+3,2022,14,THR 14,Trey Hutchens Racing,THR 14_3
+3,2025,15,Tricon 15,Tricon Garage,Tricon 15_3
+3,2024,15,Tricon 15,Tricon Garage,Tricon 15_3
+3,2023,15,Tricon 15,Tricon Garage,Tricon 15_3
+3,2022,15,Tricon 15,David Gilliland Racing,Tricon 15_3
+3,2024,16,HRE 16,Hattori Racing Enterprises,HRE 16_3
+3,2023,16,HRE 16,Hattori Racing Enterprises,HRE 16_3
+3,2022,16,HRE 16,Hattori Racing Enterprises,HRE 16_3
+3,2025,17,Tricon 17,Tricon Garage,Tricon 17_3
+3,2024,17,Tricon 17,Tricon Garage,Tricon 17_3
+3,2023,17,Tricon 17,Tricon Garage,Tricon 17_3
+3,2022,17,Tricon 17,David Gilliland Racing,Tricon 17_3
+3,2025,18,McHR 18,McAnally-Hilgemann Racing,McHR 18_3
+3,2024,18,McHR 18,McAnally-Hilgemann Racing,McHR 18_3
+3,2022,18,KBM 18,Kyle Busch Motorsports,KBM 18_3
+3,2025,19,McHR 19,McAnally-Hilgemann Racing,McHR 19_3
+3,2024,19,McHR 19,McAnally-Hilgemann Racing,McHR 19_3
+3,2023,19,McHR 19,McAnally-Hilgemann Racing,McHR 19_3
+3,2022,19,McHR 19,McAnally-Hilgemann Racing,McHR 19_3
+3,2025,20,Young 20,Young's Motorsports,Young 20_3
+3,2024,20,Young 20,Young's Motorsports,Young 20_3
+3,2023,20,Young 20,Young's Motorsports,Young 20_3
+3,2022,20,Young 20,Young's Motorsports,Young 20_3
+3,2024,21,Flo 21,Floridian Motorsports,Flo 21_3
+3,2025,22,RBR 22,Reaume Brothers Racing,RBR 22_3
+3,2024,22,RBR 22,Reaume Brothers Racing,RBR 22_3
+3,2023,22,AM 22,AM Racing,AM 22_3
+3,2022,22,AM 22,AM Racing,AM 22_3
+3,2023,23,GMS 23,GMS Racing,GMS 23_3
+3,2022,23,GMS 23,GMS Racing,GMS 23_3
+3,2023,24,GMS 24,GMS Racing,GMS 24_3
+3,2022,24,GMS 24,GMS Racing,GMS 24_3
+3,2024,25,RWAR 25,Rackley WAR,RWAR 25_3
+3,2023,25,RWAR 25,Rackley WAR,RWAR 25_3
+3,2022,25,RWAR 25,Rackley WAR,RWAR 25_3
+3,2025,26,RWAR 26,Rackley WAR,RWAR 26_3
+3,2024,26,RWAR 26,Rackley WAR,RWAR 26_3
+3,2022,26,RWAR 26,Rackley WAR,RWAR 26_3
+3,2024,27,RBR 27,Reaume Brothers Racing,RBR 27_3
+3,2024,28,FDNY 28,FDNY Racing,FDNY 28_3
+3,2023,28,FDNY 28,FDNY Racing,FDNY 28_3
+3,2022,28,FDNY 28,FDNY Racing,FDNY 28_3
+3,2023,30,OPM 30,On Point Motorsports,OPM 30_3
+3,2022,30,OPM 30,On Point Motorsports,OPM 30_3
+3,2024,32,BHR 32,Bret Holmes Racing,BHR 32_3
+3,2023,32,BHR 32,Bret Holmes Racing,BHR 32_3
+3,2022,32,BHR 32,Bret Holmes Racing,BHR 32_3
+3,2025,33,RBR 33,Reaume Brothers Racing,RBR 33_3
+3,2024,33,RBR 33,Reaume Brothers Racing,RBR 33_3
+3,2023,33,RBR 33,Reaume Brothers Racing,RBR 33_3
+3,2022,33,RBR 33,Reaume Brothers Racing,RBR 33_3
+3,2025,34,FRM 34,Front Row Motorsports,FRM 34_3
+3,2023,34,RBR 34,Reaume Brothers Racing,RBR 34_3
+3,2023,35,McHR 18,McAnally-Hilgemann Racing,McHR 18_3
+3,2022,35,McHR 18,McAnally-Hilgemann Racing,McHR 18_3
+3,2022,37,AM 37,AM Racing,AM 37_3
+3,2025,38,FRM 38,Front Row Motorsports,FRM 38_3
+3,2024,38,FRM 38,Front Row Motorsports,FRM 38_3
+3,2023,38,FRM 38,Front Row Motorsports,FRM 38_3
+3,2022,38,FRM 38,Front Row Motorsports,FRM 38_3
+3,2022,40,Niece 40,Niece Motorsports,Niece 40_3
+3,2024,41,Niece 41,Niece Motorsports,Niece 41_3
+3,2023,41,Niece 41,Niece Motorsports,Niece 41_3
+3,2022,41,Niece 41,Niece Motorsports,Niece 41_3
+3,2025,42,Niece 42,Niece Motorsports,Niece 42_3
+3,2024,42,Niece 42,Niece Motorsports,Niece 42_3
+3,2023,42,Niece 42,Niece Motorsports,Niece 42_3
+3,2022,42,Niece 42,Niece Motorsports,Niece 42_3
+3,2024,43,McHR 43,McAnally-Hilgemann Racing,McHR 43_3
+3,2023,43,GMS 43,GMS Racing,GMS 43_3
+3,2022,43,RBR 34,Reaume Brothers Racing,RBR 34_3
+3,2025,44,Niece 44,Niece Motorsports,Niece 44_3
+3,2024,44,Niece 44,Niece Motorsports,Niece 44_3
+3,2023,44,Niece 44,Niece Motorsports,Niece 44_3
+3,2022,44,Niece 44,Niece Motorsports,Niece 44_3
+3,2025,45,Niece 45,Niece Motorsports,Niece 45_3
+3,2024,45,Niece 45,Niece Motorsports,Niece 45_3
+3,2023,45,Niece 45,Niece Motorsports,Niece 45_3
+3,2022,45,Niece 45,Niece Motorsports,Niece 45_3
+3,2024,46,Young 46,Young's Motorsports,Young 46_3
+3,2023,46,G2G 46,G2G Racing,G2G 46_3
+3,2022,46,G2G 46,G2G Racing,G2G 46_3
+3,2023,47,G2G 46,G2G Racing,G2G 46_3
+3,2022,47,G2G 46,G2G Racing,G2G 46_3
+3,2022,49,CMI 49,CMI Motorsports,CMI 49_3
+3,2023,51,KBM 51,Kyle Busch Motorsports,KBM 51_3
+3,2022,51,KBM 51,Kyle Busch Motorsports,KBM 51_3
+3,2025,52,HFR 52,Halmar Friesen Racing,HFR 52_3
+3,2024,52,HFR 52,Halmar Friesen Racing,HFR 52_3
+3,2023,52,HFR 52,Halmar Friesen Racing,HFR 52_3
+3,2022,52,HFR 52,Halmar Friesen Racing,HFR 52_3
+3,2022,54,Tricon 11,David Gilliland Racing,Tricon 11_3
+3,2025,56,Hill 56,Hill Motorsports,Hill 56_3
+3,2024,56,Hill 56,Hill Motorsports,Hill 56_3
+3,2023,56,Hill 56,Hill Motorsports,Hill 56_3
+3,2022,56,Hill 56,Hill Motorsports,Hill 56_3
+3,2023,61,HRE 61,Hattori Racing Enterprises,HRE 61_3
+3,2022,61,HRE 61,Hattori Racing Enterprises,HRE 61_3
+3,2022,62,HFR 62,Halmar Friesen Racing,HFR 62_3
+3,2025,63,Akinori 63,Akinori Performance,Akinori 63_3
+3,2025,66,Thor 66,ThorSport Racing,Thor 66_3
+3,2024,66,Thor 66,ThorSport Racing,Thor 66_3
+3,2023,66,Thor 66,ThorSport Racing,Thor 66_3
+3,2022,66,Thor 66,ThorSport Racing,Thor 66_3
+3,2025,67,FRE 67,Freedom Racing Enterprises,FRE 67_3
+3,2024,67,MBM 67,MBM Motorsports,MBM 67_3
+3,2025,71,Spire 71,Spire Motorsports,Spire 71_3
+3,2024,71,Spire 71,Spire Motorsports,Spire 71_3
+3,2025,75,HenMo 75,Henderson Motorsports,HenMo 75_3
+3,2024,75,HenMo 75,Henderson Motorsports,HenMo 75_3
+3,2023,75,HenMo 75,Henderson Motorsports,HenMo 75_3
+3,2022,75,HenMo 75,Henderson Motorsports,HenMo 75_3
+3,2025,76,FRE 76,Freedom Racing Enterprises,FRE 76_3
+3,2024,76,FRE 76,Freedom Racing Enterprises,FRE 76_3
+3,2025,77,Spire 77,Spire Motorsports,Spire 77_3
+3,2024,77,Spire 77,Spire Motorsports,Spire 77_3
+3,2023,77,Spire 77,Spire Motorsports,Spire 77_3
+3,2025,81,McHR 81,McAnally-Hilgemann Racing,McHR 81_3
+3,2024,81,McHR 81,McAnally-Hilgemann Racing,McHR 81_3
+3,2025,84,Cook 84,Cook Racing Technologies,Cook 84_3
+3,2023,84,Cook 84,Cook Racing Technologies,Cook 84_3
+3,2022,84,Cook 84,Cook Racing Technologies,Cook 84_3
+3,2025,88,Thor 88,ThorSport Racing,Thor 88_3
+3,2024,88,Thor 88,ThorSport Racing,Thor 88_3
+3,2023,88,Thor 88,ThorSport Racing,Thor 88_3
+3,2022,88,Thor 88,ThorSport Racing,Thor 88_3
+3,2025,90,TCM 90,TC Motorsports,TCM 90_3
+3,2024,90,TCM 90,TC Motorsports,TCM 90_3
+3,2023,90,TCM 90,TC Motorsports,TCM 90_3
+3,2025,91,McHR 91,McAnally-Hilgemann Racing,McHR 91_3
+3,2024,91,McHR 91,McAnally-Hilgemann Racing,McHR 91_3
+3,2022,91,McHR 91,McAnally-Hilgemann Racing,McHR 91_3
+3,2025,95,GKR 95,GK Racing,GKR 95_3
+3,2024,95,GKR 95,GK Racing,GKR 95_3
+3,2023,95,GKR 95,GK Racing,GKR 95_3
+3,2022,96,Peck 96,Peck Motorsports,Peck 96_3
+3,2024,97,CR7 97,CR7 Motorsports,CR7 97_3
+3,2023,97,CR7 97,CR7 Motorsports,CR7 97_3
+3,2025,98,Thor 98,ThorSport Racing,Thor 98_3
+3,2024,98,Thor 98,ThorSport Racing,Thor 98_3
+3,2023,98,Thor 98,ThorSport Racing,Thor 98_3
+3,2022,98,Thor 98,ThorSport Racing,Thor 98_3
+3,2025,99,Thor 99,ThorSport Racing,Thor 99_3
+3,2024,99,Thor 99,ThorSport Racing,Thor 99_3
+3,2023,99,Thor 99,ThorSport Racing,Thor 99_3
+3,2022,99,Thor 99,ThorSport Racing,Thor 99_3
+3,2025,02,Young 02,Young's Motorsports,Young 02_3
+3,2024,02,Young 02,Young's Motorsports,Young 02_3
+3,2023,02,Young 02,Young's Motorsports,Young 02_3
+3,2024,04,Roper 04,Roper Racing,Roper 04_3
+3,2023,04,Roper 04,Roper Racing,Roper 04_3
+3,2025,07,Spire 07,Spire Motorsports,Spire 07_3
