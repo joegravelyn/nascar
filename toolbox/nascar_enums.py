@@ -6,7 +6,6 @@ class Series(Enum):
    Cup = 1
    Xfinity = 2
    Truck = 3
-   ARCA = 4
 
    @classmethod
    def _missing_(cls, value: object) -> Any:
