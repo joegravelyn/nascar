@@ -2,7 +2,8 @@ import configparser
 from pathlib import Path
 import mysql.connector
 
-confirm = input("This will delete the entire database and recreate it. If you want to proceed, enter \"confirm\": ")
+#confirm = input("This will delete the entire database and recreate it. If you want to proceed, enter \"confirm\": ")
+confirm = "confirm"
 
 if confirm.lower() == "confirm":
 
