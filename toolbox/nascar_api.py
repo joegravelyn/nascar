@@ -41,18 +41,16 @@ class Feeds(Enum):
    Box_Score = Feed("https://cf.nascar.com/loopstats/prod/|year|/|series_id|/|race_id|.json", ["year", "series_id", "race_id"])
 
 
-def get_api_data(feed: Feeds, params: dict[str, int], url_header: str) -> tuple[bool, int, pd.DataFrame]:
-   result = False
+def get_api_data(feed: Feeds, params: dict[str, int], url_header: str) -> dict:
    request_url = feed.value.url
    for p in feed.value.params:
       request_url = request_url.replace(f"|{p}|", str(params[p]))
 
    response = requests.get(request_url, url_header)
 
-   if response.status_code == 200:
-      result = True
-      result_df = pd.DataFrame(response.json())
-   else:
-      result_df = pd.DataFrame()
-
-   return (result, response.status_code, result_df)
+   return {
+      "request": request_url, 
+      "result": response.status_code == 200, 
+      "result_code": response.status_code, 
+      "json": response.json() if response.status_code == 200 else None
+   }

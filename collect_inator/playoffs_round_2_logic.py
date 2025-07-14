@@ -1,4 +1,5 @@
 import pandas as pd
 
-def clean_df(df: pd.DataFrame) -> pd.DataFrame:
+def json_to_df(json: object) -> pd.DataFrame:
+   df = pd.DataFrame(json) # type: ignore
    return df
