@@ -30,14 +30,14 @@ from collect_inator import lap_averages_logic
 from collect_inator import box_score_logic
 
 
-def get_tracks(url_header: str, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_tracks(url_header: str, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Tracks, {}, url_header=url_header)
 
    if api_result["result"]:
       df = tracks_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="tracks", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("tracks", con=sql_engine, if_exists="append", index=False)
@@ -45,16 +45,16 @@ def get_tracks(url_header: str, sql_engine: Engine | None = None, load_to_sql: b
       return (True, df)
    else:
       print(f"API call failed for Feeds.Tracks. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_live_ops(url_header: str, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_live_ops(url_header: str, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Live_Ops, {}, url_header=url_header)
 
    if api_result["result"]:
       df = live_ops_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="live_ops", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("live_ops", con=sql_engine, if_exists="append", index=False)
@@ -62,16 +62,16 @@ def get_live_ops(url_header: str, sql_engine: Engine | None = None, load_to_sql:
       return (True, df)
    else:
       print(f"API call failed for Feeds.Live_Ops. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_race_list(url_header: str, year: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_race_list(url_header: str, year: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Race_List, {"year": year}, url_header=url_header)
 
    if api_result["result"]:
       df = race_list_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="race_list", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("race_list", con=sql_engine, if_exists="append", index=False)
@@ -79,16 +79,16 @@ def get_race_list(url_header: str, year: int, sql_engine: Engine | None = None, 
       return (True, df)
    else:
       print(f"API call failed for Feeds.Race_List. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_schedule(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_schedule(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Schedule, {"year": year, "series_id": series_id}, url_header=url_header)
 
    if api_result["result"]:
       df = schedule_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="schedule", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("schedule", con=sql_engine, if_exists="append", index=False)
@@ -96,16 +96,16 @@ def get_schedule(url_header: str, year: int, series_id: int, sql_engine: Engine 
       return (True, df)
    else:
       print(f"API call failed for Feeds.Schedule. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_current_points(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_current_points(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Current_Points, {"year": year, "series_id": series_id}, url_header=url_header)
 
    if api_result["result"]:
       df = current_points_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="current_points", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("current_points", con=sql_engine, if_exists="append", index=False)
@@ -113,16 +113,16 @@ def get_current_points(url_header: str, year: int, series_id: int, sql_engine: E
       return (True, df)
    else:
       print(f"API call failed for Feeds.Current_Points. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_owner_points(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_owner_points(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Owner_Points, {"year": year, "series_id": series_id}, url_header=url_header)
 
    if api_result["result"]:
       df = owner_points_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="owner_points", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("owner_points", con=sql_engine, if_exists="append", index=False)
@@ -130,16 +130,16 @@ def get_owner_points(url_header: str, year: int, series_id: int, sql_engine: Eng
       return (True, df)
    else:
       print(f"API call failed for Feeds.Owner_Points. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_drivers_feed(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_drivers_feed(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Drivers_Feed, {"year": year, "series_id": series_id}, url_header=url_header)
 
    if api_result["result"]:
       df = drivers_feed_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="drivers_feed", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("drivers_feed", con=sql_engine, if_exists="append", index=False)
@@ -147,16 +147,16 @@ def get_drivers_feed(url_header: str, year: int, series_id: int, sql_engine: Eng
       return (True, df)
    else:
       print(f"API call failed for Feeds.Drivers_Feed. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_playoffs_round_0(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_playoffs_round_0(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Playoffs_Round_0, {"year": year, "series_id": series_id}, url_header=url_header)
 
    if api_result["result"]:
       df = playoffs_round_0_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="playoffs_round_0", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("playoffs_round_0", con=sql_engine, if_exists="append", index=False)
@@ -164,16 +164,16 @@ def get_playoffs_round_0(url_header: str, year: int, series_id: int, sql_engine:
       return (True, df)
    else:
       print(f"API call failed for Feeds.Playoffs_Round_0. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_playoffs_round_1(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_playoffs_round_1(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Playoffs_Round_1, {"year": year, "series_id": series_id}, url_header=url_header)
 
    if api_result["result"]:
       df = playoffs_round_1_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="playoffs_round_1", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("playoffs_round_1", con=sql_engine, if_exists="append", index=False)
@@ -181,16 +181,16 @@ def get_playoffs_round_1(url_header: str, year: int, series_id: int, sql_engine:
       return (True, df)
    else:
       print(f"API call failed for Feeds.Playoffs_Round_1. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_playoffs_round_2(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_playoffs_round_2(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Playoffs_Round_2, {"year": year, "series_id": series_id}, url_header=url_header)
 
    if api_result["result"]:
       df = playoffs_round_2_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="playoffs_round_2", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("playoffs_round_2", con=sql_engine, if_exists="append", index=False)
@@ -198,16 +198,16 @@ def get_playoffs_round_2(url_header: str, year: int, series_id: int, sql_engine:
       return (True, df)
    else:
       print(f"API call failed for Feeds.Playoffs_Round_2. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_playoffs_round_3(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_playoffs_round_3(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Playoffs_Round_3, {"year": year, "series_id": series_id}, url_header=url_header)
 
    if api_result["result"]:
       df = playoffs_round_3_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="playoffs_round_3", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("playoffs_round_3", con=sql_engine, if_exists="append", index=False)
@@ -215,16 +215,16 @@ def get_playoffs_round_3(url_header: str, year: int, series_id: int, sql_engine:
       return (True, df)
    else:
       print(f"API call failed for Feeds.Playoffs_Round_3. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_playoffs_round_4(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_playoffs_round_4(url_header: str, year: int, series_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Playoffs_Round_4, {"year": year, "series_id": series_id}, url_header=url_header)
 
    if api_result["result"]:
       df = playoffs_round_4_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="playoffs_round_4", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("playoffs_round_4", con=sql_engine, if_exists="append", index=False)
@@ -232,16 +232,16 @@ def get_playoffs_round_4(url_header: str, year: int, series_id: int, sql_engine:
       return (True, df)
    else:
       print(f"API call failed for Feeds.Playoffs_Round_4. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_flag_data(url_header: str, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_flag_data(url_header: str, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Flag_Data, {"series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = flag_data_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="flag_data", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("flag_data", con=sql_engine, if_exists="append", index=False)
@@ -249,16 +249,16 @@ def get_flag_data(url_header: str, series_id: int, race_id: int, sql_engine: Eng
       return (True, df)
    else:
       print(f"API call failed for Feeds.Flag_Data. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_live_feed(url_header: str, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_live_feed(url_header: str, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Live_Feed, {"series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = live_feed_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="live_feed", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("live_feed", con=sql_engine, if_exists="append", index=False)
@@ -266,16 +266,16 @@ def get_live_feed(url_header: str, series_id: int, race_id: int, sql_engine: Eng
       return (True, df)
    else:
       print(f"API call failed for Feeds.Live_Feed. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_live_points(url_header: str, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_live_points(url_header: str, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Live_Points, {"series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = live_points_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="live_points", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("live_points", con=sql_engine, if_exists="append", index=False)
@@ -283,16 +283,16 @@ def get_live_points(url_header: str, series_id: int, race_id: int, sql_engine: E
       return (True, df)
    else:
       print(f"API call failed for Feeds.Live_Points. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_pit_stops(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_pit_stops(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Pit_Stops, {"year": year, "series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = pit_stops_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="pit_stops", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("pit_stops", con=sql_engine, if_exists="append", index=False)
@@ -300,16 +300,16 @@ def get_pit_stops(url_header: str, year: int, series_id: int, race_id: int, sql_
       return (True, df)
    else:
       print(f"API call failed for Feeds.Pit_Stops. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_lap_times(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_lap_times(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Lap_Times, {"year": year, "series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = lap_times_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="lap_times", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("lap_times", con=sql_engine, if_exists="append", index=False)
@@ -317,16 +317,16 @@ def get_lap_times(url_header: str, year: int, series_id: int, race_id: int, sql_
       return (True, df)
    else:
       print(f"API call failed for Feeds.Lap_Times. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_race_results(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_race_results(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Race_Results, {"year": year, "series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = race_results_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="race_results", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("race_results", con=sql_engine, if_exists="append", index=False)
@@ -334,16 +334,16 @@ def get_race_results(url_header: str, year: int, series_id: int, race_id: int, s
       return (True, df)
    else:
       print(f"API call failed for Feeds.Race_Results. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_lap_notes(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_lap_notes(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Lap_Notes, {"year": year, "series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = lap_notes_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="lap_notes", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("lap_notes", con=sql_engine, if_exists="append", index=False)
@@ -351,16 +351,16 @@ def get_lap_notes(url_header: str, year: int, series_id: int, race_id: int, sql_
       return (True, df)
    else:
       print(f"API call failed for Feeds.Lap_Notes. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_snaps(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_snaps(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Snaps, {"year": year, "series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = snaps_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="snaps", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("snaps", con=sql_engine, if_exists="append", index=False)
@@ -368,16 +368,16 @@ def get_snaps(url_header: str, year: int, series_id: int, race_id: int, sql_engi
       return (True, df)
    else:
       print(f"API call failed for Feeds.Snaps. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_weekend_feed(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_weekend_feed(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Weekend_Feed, {"year": year, "series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = weekend_feed_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="weekend_feed", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("weekend_feed", con=sql_engine, if_exists="append", index=False)
@@ -385,16 +385,16 @@ def get_weekend_feed(url_header: str, year: int, series_id: int, race_id: int, s
       return (True, df)
    else:
       print(f"API call failed for Feeds.Weekend_Feed. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_lap_averages(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_lap_averages(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Lap_Averages, {"year": year, "series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = lap_averages_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="lap_averages", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("lap_averages", con=sql_engine, if_exists="append", index=False)
@@ -402,16 +402,16 @@ def get_lap_averages(url_header: str, year: int, series_id: int, race_id: int, s
       return (True, df)
    else:
       print(f"API call failed for Feeds.Lap_Averages. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 
-def get_box_score(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame]:
+def get_box_score(url_header: str, year: int, series_id: int, race_id: int, sql_engine: Engine | None = None, load_to_sql: bool = True) -> tuple[bool, pd.DataFrame | None]:
    api_result = get_api_data(Feeds.Box_Score, {"year": year, "series_id": series_id, "race_id": race_id}, url_header=url_header)
 
    if api_result["result"]:
       df = box_score_logic.json_to_df(api_result["json"])
 
       if load_to_sql:
-         if sql_engine == None: return (False, pd.DataFrame())
+         if sql_engine == None: return (False, None)
          existing_df = pd.read_sql_table(table_name="box_score", con=sql_engine, schema="nascar")
          df = pd.concat([df, existing_df])
          df.drop_duplicates().to_sql("box_score", con=sql_engine, if_exists="append", index=False)
@@ -419,5 +419,5 @@ def get_box_score(url_header: str, year: int, series_id: int, race_id: int, sql_
       return (True, df)
    else:
       print(f"API call failed for Feeds.Box_Score. URL response code = {api_result["result_code"]}")
-      return (False, pd.DataFrame())
+      return (False, None)
 

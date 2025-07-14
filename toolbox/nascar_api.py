@@ -41,7 +41,7 @@ class Feeds(Enum):
    Box_Score = Feed("https://cf.nascar.com/loopstats/prod/|year|/|series_id|/|race_id|.json", ["year", "series_id", "race_id"])
 
 
-def get_api_data(feed: Feeds, params: dict[str, int], url_header: str) -> dict:
+def get_api_data(feed: Feeds, params: dict[str, int], url_header: str) -> dict[str, str | bool | int | dict | list | object]:
    request_url = feed.value.url
    for p in feed.value.params:
       request_url = request_url.replace(f"|{p}|", str(params[p]))
