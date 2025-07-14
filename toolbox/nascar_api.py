@@ -1,41 +1,53 @@
 # Credit to https://github.com/ooohfascinating/NascarApi/tree/main for starting point
 
+from dataclasses import dataclass
 import pandas as pd
 import requests
 from enum import Enum
 
+@dataclass
+class Feed:
+   url: str
+   params: list[str]
+
+
 class Feeds(Enum):
-   Tracks = "https://cf.nascar.com/data/cacher/production/tracks.json"
-   Live_Ops = "https://cf.nascar.com/live-ops/live-ops.json"
+   Tracks = Feed("https://cf.nascar.com/data/cacher/production/tracks.json", [])
+   Live_Ops = Feed("https://cf.nascar.com/live-ops/live-ops.json", [])
    # per year
-   Race_List = "https://cf.nascar.com/cacher/|year|/race_list_basic.json"
+   Race_List = Feed("https://cf.nascar.com/cacher/|year|/race_list_basic.json", ["year"])
    # per year and series
-   Schedule = "https://cf.nascar.com/cacher/|year|/|series_id|/schedule-feed.json"
-   Current_Points = "https://cf.nascar.com/cacher/|year|/|series_id|/points-feed.json"
-   Owner_Points = "https://cf.nascar.com/cacher/|year|/|series_id|/final/|series_id|-owners-points.json"
-   Drivers_Feed = "https://cf.nascar.com/cacher/|year|/|series_id|/drivers-combined-feed-v2.json"
-   Playoffs_Round_0 = "https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_0.json"
-   Playoffs_Round_1 = "https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_1.json"
-   Playoffs_Round_2 = "https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_2.json"
-   Playoffs_Round_3 = "https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_3.json"
-   Playoffs_Round_4 = "https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_4.json"
-   # per race - occasionally with year and/or series as well
-   Flag_Data = "https://cf.nascar.com/live/feeds/series_|series_id|/|race_id|/live-flag-data.json"
-   Live_Feed = "https://cf.nascar.com/live/feeds/series_|series_id|/|race_id|/live_feed.json"
-   Live_Points = "https://cf.nascar.com/live/feeds/series_|series_id|/|race_id|/live_points.json"
-   Live_Pit_Stops = "https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/live-pit-data.json"
-   Lap_Times = "https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/lap-times.json"
-   Race_Results = "https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/raceResults.json"
-   Lap_Notes = "https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/lap-notes.json"
-   Snaps = "https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/snappytv.json"
-   Weekend_Feed = "https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/weekend-feed.json"
-   Lap_Averages = "https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/lap-averages.json"
-   Box_Score = "https://cf.nascar.com/loopstats/prod/|year|/|series_id|/|race_id|.json"
+   Schedule = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/schedule-feed.json", ["year", "series_id"])
+   Current_Points = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/points-feed.json", ["year", "series_id"])
+   Owner_Points = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/final/|series_id|-owners-points.json", ["year", "series_id"])
+   Drivers_Feed = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/drivers-combined-feed-v2.json", ["year", "series_id"])
+   Playoffs_Round_0 = Feed("https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_0.json", ["year", "series_id"])
+   Playoffs_Round_1 = Feed("https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_1.json", ["year", "series_id"])
+   Playoffs_Round_2 = Feed("https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_2.json", ["year", "series_id"])
+   Playoffs_Round_3 = Feed("https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_3.json", ["year", "series_id"])
+   Playoffs_Round_4 = Feed("https://cf.nascar.com/data/cacher/production/|year|/|series_id|/playoffs/round_4.json", ["year", "series_id"])
+   # per race live feeds
+   Flag_Data = Feed("https://cf.nascar.com/live/feeds/series_|series_id|/|race_id|/live-flag-data.json", ["series_id", "race_id"])
+   Live_Feed = Feed("https://cf.nascar.com/live/feeds/series_|series_id|/|race_id|/live_feed.json", ["series_id", "race_id"])
+   Live_Points = Feed("https://cf.nascar.com/live/feeds/series_|series_id|/|race_id|/live_points.json", ["series_id", "race_id"])
+   # per race
+   Pit_Stops = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/live-pit-data.json", ["year", "series_id", "race_id"])
+   Lap_Times = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/lap-times.json", ["year", "series_id", "race_id"])
+   Race_Results = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/raceResults.json", ["year", "series_id", "race_id"])
+   Lap_Notes = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/lap-notes.json", ["year", "series_id", "race_id"])
+   Snaps = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/snappytv.json", ["year", "series_id", "race_id"])
+   Weekend_Feed = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/weekend-feed.json", ["year", "series_id", "race_id"])
+   Lap_Averages = Feed("https://cf.nascar.com/cacher/|year|/|series_id|/|race_id|/lap-averages.json", ["year", "series_id", "race_id"])
+   Box_Score = Feed("https://cf.nascar.com/loopstats/prod/|year|/|series_id|/|race_id|.json", ["year", "series_id", "race_id"])
 
 
-def get_data(feed: Feeds, url_header: str, year: int = 0, series_id: int = 0, race_id: int = 0) -> tuple[bool, int, pd.DataFrame]:
+def get_api_data(feed: Feeds, params: dict[str, int], url_header: str) -> tuple[bool, int, pd.DataFrame]:
    result = False
-   response = requests.get(feed.value.replace("|year|", str(year)).replace("|series_id|", str(series_id)).replace("|race_id|", str(race_id)), url_header)
+   request_url = feed.value.url
+   for p in feed.value.params:
+      request_url = request_url.replace(f"|{p}|", str(params[p]))
+
+   response = requests.get(request_url, url_header)
 
    if response.status_code == 200:
       result = True
