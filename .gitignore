@@ -6,3 +6,5 @@ SQL Server Database
 __pycache__
 */__pycache__
 config.ini
+scratch.ipynb
+viz
