@@ -1,6 +1,8 @@
 CREATE TABLE flags
 (
-      lap_number        int
+      race_id           int
+   ,  series_id         int
+   ,  lap_number        int
    ,  flag_state        int
    ,  elapsed_time      decimal(10, 4)
    ,  comment           varchar(500)
