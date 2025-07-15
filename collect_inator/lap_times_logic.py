@@ -1,7 +1,7 @@
 import pandas as pd
 
 def json_to_df(json: dict | list | object, year: int, series_id: int, race_id: int) -> dict[str, pd.DataFrame]:
-   lap_times_laps = pd.DataFrame(raw["laps"]) # type: ignore
+   lap_times_laps = pd.DataFrame(json["laps"]) # type: ignore
    lap_times_laps = lap_times_laps.explode("Laps", ignore_index=True)
 
    driver_laps = pd.json_normalize(lap_times_laps["Laps"]) # type: ignore
@@ -23,8 +23,8 @@ def json_to_df(json: dict | list | object, year: int, series_id: int, race_id: i
 
 
    
-   lap_times_flags = pd.DataFrame(raw["flags"]) # type: ignore
-   lap_times_laps = lap_times_laps.rename(columns={
+   lap_times_flags = pd.DataFrame(json["flags"]) # type: ignore
+   lap_times_flags = lap_times_flags.rename(columns={
       "LapsCompleted": "lap_number",
       "FlagState": "flag_state"
       })
